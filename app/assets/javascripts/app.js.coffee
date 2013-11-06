@@ -5,5 +5,5 @@ demoApp.controller 'demoController', ['$scope', ($scope) ->
 	$scope.tmp = ''
 
 	$scope.clickButton = ->
-		$scope.tmp += 'klikket - '
+		$scope.tmp += ' - klikket '
 ]
