@@ -1,8 +1,7 @@
-<div>
-  <label>Name:</label>
-  <input type="text" ng-model="yourName" placeholder="Enter a name here">
-  <hr>
-  <h1>Hello {{yourName}}!</h1>
+<h2>Demo ng-repeat</h2>
 
-  <p>DEMO NG-REPEAT</p>
-</div>
+<ol>
+	<li ng-repeat="p in ['a', 'q', 'c']">{{p}}</li>
+</ol>
+<button type="button" class="btn btn-primary btn-lg" ng-click="arne()">click me</button>
+
