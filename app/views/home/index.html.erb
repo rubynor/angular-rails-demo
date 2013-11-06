@@ -1,6 +1,37 @@
-<div>
-  <label>Name:</label>
-  <input type="text" ng-model="yourName" placeholder="Enter a name here">
-  <hr>
-  <h1>Hello {{yourName}}!</h1>
+<h2>Demo ng-repeat</h2>
+
+<div class="row">
+	<div class="col-md-6">
+	  <table class="table table-striped">
+	    <thead>
+	    <tr>
+	      <th>innhold i p</th>
+	      <th>Index</th>
+	    </tr>
+	    </thead>
+	    <tbody>
+	    <tr ng-repeat="p in ['a', 'q', 'c']">
+	      <td>{{ p }}</td>
+	      <td>{{ $index }}</td>
+	    </tr>
+	    </tbody>
+	  </table>
+	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-6" data-ng-show='demo2'>
+  <div ng-repeat="n in list">
+	  <strong>Navn: </strong>{{n.firstname}} {{n.lastname}} <br>
+	</div>
+</div>
+
+<button type="button" class="btn btn-primary btn-lg" ng-click="demo2 = true" ng-show="demo1" ng-hide="demo2">ng-repeat div fra factory</button>
