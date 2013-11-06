@@ -1,8 +1,6 @@
 demoApp = angular.module('demoApp', [])
 
 demoApp.controller 'demoController', ['$scope', 'demoFactory', ($scope, Demo) ->
-	$scope.arne = ->
-		alert 'arne'
 	$scope.list =  Demo.getList()
 ]
 
